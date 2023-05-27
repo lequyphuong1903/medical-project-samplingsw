@@ -1,0 +1,2395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>889</width>
+    <height>919</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Save">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>850</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SAVE</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="patient_list">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>40</y>
+      <width>271</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>Họ và Tên</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="New">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>850</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NEW</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Restore">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>850</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RESTORE</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>601</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Thông tin và bệnh án</string>
+     </attribute>
+     <widget class="QGroupBox" name="ngoai_quan">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>271</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>THÔNG SỐ</string>
+      </property>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cân nặng</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Chiều cao</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mạch</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SBP</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>DBP</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>20</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>kg</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>50</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>cm</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>110</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>mmHg</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>140</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>mmHg</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="weight">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="height">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>50</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="pulse_1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="SBP_1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>110</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="DBP_1">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>140</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>80</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>nhịp/phút</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="thoi_quen">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>190</y>
+        <width>271</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>THÓI QUEN SINH HOẠT</string>
+      </property>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hút thuốc</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Rượu bia</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Thời gian ngủ mỗi ngày</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>20</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Điếu /ngày</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>50</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ngày/lần</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>100</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Giờ/ngày</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="smoke">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>1000.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="alcohol">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>50</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>1000.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="sleep_time">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>100</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>99.900000000000006</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="thong_tin_ca_nhan">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>THÔNG TIN CÁ NHÂN</string>
+      </property>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Họ và Tên</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="name">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>150</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="birthday">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>80</y>
+         <width>150</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Năm sinh</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Giới tính</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mã số</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="code">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>170</y>
+         <width>150</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="gender">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>140</y>
+         <width>69</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Nam</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nữ</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Date</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="date">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>150</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="trc_lay_mau">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>300</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>TÌNH TRẠNG SỨC KHỎE TRONG 24h TRƯỚC KHI LẤY MẪU</string>
+      </property>
+      <widget class="QCheckBox" name="eat_30">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>280</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ăn trong vòng 30 phút trước khi lấy mẫu</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="vomic">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>280</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Buồn nôn</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fatigue">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>280</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string> Mệt mỏi</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="choppy">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>280</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hoa mắt, chóng mặt</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>581</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>THÔNG TIN VỀ TIỀN SỬ BỆNH LIÊN QUAN</string>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>300</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Đau thắt ngực</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tăng huyết áp</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>20</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tiểu đường</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>50</y>
+         <width>47</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Suy tim</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="that_nguc">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CCS1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CCS2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CCS3</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="tang_huyet_ap">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>50</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>THA1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>THA2</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="tieu_duong">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>20</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Type 1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Type 2</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="suy_tim">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>50</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NYHA1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NYHA2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NYHA3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NYHA4</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>30</y>
+         <width>47</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>80</y>
+         <width>261</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Rối loạn nhịp tim</string>
+       </property>
+       <widget class="QCheckBox" name="PVC">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>140</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ngoại thu tâm nhĩ</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="block_phai">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>230</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Block nhánh phải</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="bloc_trai">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>200</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Block nhánh trái</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="PAC">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ngoại thu tâm thất</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="rung_nhi">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>70</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Rung nhĩ</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="block_nhi_that">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Block nhĩ thất</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="nhip_nhanh_tren_that">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>161</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nhịp nhanh trên thất</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="loan_nhip">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Không xác định</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Không</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Có</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>291</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Hở van tim trên siêu âm</string>
+       </property>
+       <widget class="QComboBox" name="ho_van_2_la">
+        <property name="geometry">
+         <rect>
+          <x>158</x>
+          <y>80</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Không xác định</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Không</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Có</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 1/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 2/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 3/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 4/4</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="ho_van_3_la">
+        <property name="geometry">
+         <rect>
+          <x>158</x>
+          <y>110</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Không xác định</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Không</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Có</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 1/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 2/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hỏ van 3/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 4/4</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hở van ĐMC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hở van 3 lá</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="ho_van_DMC">
+        <property name="geometry">
+         <rect>
+          <x>158</x>
+          <y>50</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Không xác định</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Không</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Có</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 1/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 2/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hỏ van 3/4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hở van 4/4</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hở van 2 lá</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="ho_van_tim">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>20</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Không xác định</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Không</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Có</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>291</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Phẫu thuật tim</string>
+       </property>
+       <widget class="QComboBox" name="heart_op_1">
+        <property name="geometry">
+         <rect>
+          <x>159</x>
+          <y>20</y>
+          <width>121</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Không xác định</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Không</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Có</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QCheckBox" name="vessel_1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>191</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mạch máu khác</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="DMV_1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>201</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Động mạch vành</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="van_tim">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Van tim</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QComboBox" name="xvdmv">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>350</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_49">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>350</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Xơ vữa động mạch vành</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>350</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Xơ vữa động mạch</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="xvdm">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>350</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Chẩn đoán dựa trên ECG</string>
+     </attribute>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xoắn đỉnh</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="xoan_dinh">
+      <property name="geometry">
+       <rect>
+        <x>169</x>
+        <y>70</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Không xác định</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Không</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Có</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>70</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rung thất</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="rung_that">
+      <property name="geometry">
+       <rect>
+        <x>458</x>
+        <y>70</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Không xác định</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Không</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Có</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>280</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Nhịp nhanh xoang</string>
+      </property>
+      <widget class="QComboBox" name="xoang_nhanh">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QDoubleSpinBox" name="f_xoang_nhanh">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>50</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tần số (Hz)</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>280</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Rung nhĩ</string>
+      </property>
+      <widget class="QComboBox" name="rung_nhi_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="so_luong">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>50</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>70 lần/phút</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>80 lần/phút</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>90 lần/phút</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Số lượng</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Đáp ứng thất</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="dap_ung">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>80</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>100</y>
+        <width>280</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Nhịp nhanh thất</string>
+      </property>
+      <widget class="QComboBox" name="that_nhanh">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tần số (Hz)</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="f_that_nhanh">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>50</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>280</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Nhịp tim chậm</string>
+      </property>
+      <widget class="QComboBox" name="tim_cham">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_95">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tần số (Hz)</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="f_tim_cham">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>50</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999.899999999999977</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>280</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Phẫu thuật tim</string>
+      </property>
+      <widget class="QComboBox" name="heart_op_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QCheckBox" name="thay_van">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Thay van tim</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="mach_khac_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Động mạch khác</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="DMV_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Động mạch vành</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>300</y>
+        <width>280</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Nhịp chậm xoang</string>
+      </property>
+      <widget class="QCheckBox" name="block_nhi_that_1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Block nhĩ tất độ 1</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="mobitz_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mobitz 2</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="block_nhi_that_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Block nhĩ thất độ 3</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="block_nhi_that_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Block nhĩ thất độ 2</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="mobitz_1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mobitz 1</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cham_xoang">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mạch (nhịp/phút)</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="pulse_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <double>999.899999999999977</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SPO2 (%)</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="SPO2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>10</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <double>999.899999999999977</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SBP (mmHg)</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="SBP_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <double>999.899999999999977</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>40</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DBP (mmHg)</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="DBP_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>40</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <double>999.899999999999977</double>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>280</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Ngoại thu</string>
+      </property>
+      <widget class="QComboBox" name="ngoai_thu_tam_nhi">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ngoại thu tâm nhĩ</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ngoại thu tâm thất</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="ngoai_thu_tam_that">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>60</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>440</y>
+        <width>280</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Block nhĩ thất</string>
+      </property>
+      <widget class="QComboBox" name="block_that_trai">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Block nhánh trái</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_51">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Block nhánh phải</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="block_that_phai">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>60</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Không xác định</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Không</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Có</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="PPG_Plot">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>780</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PPG</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="ECGSpin">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>780</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>12</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ECG_Plot">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>780</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ECG</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="sigplt" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>571</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QScrollBar" name="sigplt_scrollbar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>760</y>
+        <width>571</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="ECG_Signal">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>850</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ECG SIGNAL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PPG_Signal">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>850</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PPG SIGNAL</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>889</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
